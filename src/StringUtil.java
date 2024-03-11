@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 public class StringUtil {
     public static List<String> getUniqueSortedWords(String input) {
 
-        String normaInput = input.replaceAll("[,.!\" «»]",  "").toLowerCase();
+        String normaInput = input.replaceAll("[,.!\"«»]",  "").toLowerCase();
 
         List<String> words = Arrays.asList(normaInput.split("\\s+"));
         Set<String> uniqueWordsSet = new HashSet<>(words);
